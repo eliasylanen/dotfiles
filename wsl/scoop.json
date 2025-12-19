@@ -1,0 +1,109 @@
+{
+    "buckets": [
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": {
+                "value": "\/Date(1679905707000)\/",
+                "DisplayHint": 2,
+                "DateTime": "Monday, March 27, 2023 11:28:27 AM"
+            },
+            "Manifests": 1788
+        },
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main",
+            "Updated": {
+                "value": "\/Date(1679891322000)\/",
+                "DisplayHint": 2,
+                "DateTime": "Monday, March 27, 2023 7:28:42 AM"
+            },
+            "Manifests": 1180
+        },
+        {
+            "Name": "nerd-fonts",
+            "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
+            "Updated": {
+                "value": "\/Date(1679832166000)\/",
+                "DisplayHint": 2,
+                "DateTime": "Sunday, March 26, 2023 3:02:46 PM"
+            },
+            "Manifests": 221
+        },
+        {
+            "Name": "versions",
+            "Source": "https://github.com/ScoopInstaller/Versions",
+            "Updated": {
+                "value": "\/Date(1679925554000)\/",
+                "DisplayHint": 2,
+                "DateTime": "Monday, March 27, 2023 4:59:14 PM"
+            },
+            "Manifests": 418
+        }
+    ],
+    "apps": [
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "7zip",
+            "Version": "22.01",
+            "Updated": "\/Date(1660119660036)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "coreutils",
+            "Version": "5.97.3",
+            "Updated": "\/Date(1660119890190)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "fnm",
+            "Version": "1.33.1",
+            "Updated": "\/Date(1670572778291)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "git",
+            "Version": "2.40.0.windows.1",
+            "Updated": "\/Date(1678949353191)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "micro",
+            "Version": "2.0.11",
+            "Updated": "\/Date(1660119892515)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "pshazz",
+            "Version": "0.2022.03.09",
+            "Updated": "\/Date(1660119902107)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "sudo",
+            "Version": "0.2020.01.26",
+            "Updated": "\/Date(1660119671007)\/"
+        },
+        {
+            "Info": "",
+            "Source": "main",
+            "Name": "which",
+            "Version": "2.20",
+            "Updated": "\/Date(1660119902808)\/"
+        },
+        {
+            "Info": "Global install",
+            "Source": "nerd-fonts",
+            "Name": "FiraCode",
+            "Version": "6.2",
+            "Updated": "\/Date(1675273727573)\/"
+        }
+    ]
+}
