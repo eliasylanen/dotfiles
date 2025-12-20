@@ -1,5 +1,9 @@
 # TODO List
 
+## general WIP
+
+* user-select of the scripts to run
+
 ## dotfiles WIP
 
 * .gitconfig
@@ -12,5 +16,6 @@
 * Docker
 * Heroku CLI
 * Micro
+* Taskfile
 * Terraform
 * UpCloud CLI
