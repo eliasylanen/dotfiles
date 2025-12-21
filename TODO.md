@@ -6,9 +6,8 @@
 
 ## dotfiles WIP
 
-* .gitconfig
 * fstab
-* zed/ config
+* zed config
 
 ## install WIP
 

@@ -2,7 +2,7 @@
 
 set -euo pipefail;
 
-echo "Are you sure the following packages are installed:"
+echo "The automation requires that the following packages are installed:"
 echo "coreutils"
 echo "git"
 echo "keychain"
