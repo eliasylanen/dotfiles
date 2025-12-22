@@ -10,7 +10,7 @@ then
 	exit 0
 fi
 
-curl -fsSL https://fnm.vercel.app/install | bash -s --skip-shell
+curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 

@@ -10,4 +10,9 @@ cp "../sources/update-startup.lnk" "$windowsUserFolder/AppData/Roaming/Microsoft
 cp "../sources/WindowsTerminalSettings.json" "$windowsUserFolder/Desktop/";
 cp "../sources/winget.json" "$windowsUserFolder/Desktop/";
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+mkdir -p "$HOME/.bashrc.d"
+ln -sf "$SCRIPT_DIR/wsl.bashrc" "$HOME/.bashrc.d/wsl.bashrc"
+
 echo "HINT: after installing 1password and op.exe CLI on the Windows side, soft-link op.exe to /usr/local/bin in WSL";
