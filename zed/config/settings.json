@@ -1,0 +1,75 @@
+{
+	"agent": {
+		"profiles": {
+   "agent": {
+    "name": "Agent",
+    "tools": {},
+    "enable_all_context_servers": false,
+    "context_servers": {}
+   }
+  },
+  "dock": "left",
+		"default_profile": "write",
+		"default_model": {
+			"provider": "copilot_chat",
+			"model": "gemini-3-pro-preview"
+		},
+		"model_parameters": [],
+		"inline_assistant_model": {
+			"provider": "copilot_chat",
+			"model": "claude-haiku-4.5"
+		}
+	},
+	"auto_install_extensions": {
+		"biome": true,
+		"csv": true,
+		"csharp": true,
+		"docker-compose": true,
+		"dockerfile": true,
+		"env": true,
+		"git-firefly": true,
+		"html": true,
+		"marksman": true,
+		"material-dark": true,
+		"material-icon-theme": true,
+		"nginx": true,
+		"rainbow-csv": true,
+		"scss": true,
+		"sql": true,
+		"svelte": true,
+		"terraform": true,
+		"xml": true
+	},
+	"autosave": "on_window_change",
+	"buffer_font_size": 14,
+	"features": {
+		"edit_prediction_provider": "zed"
+	},
+	"hard_tabs": true,
+	"icon_theme": "Material Icon Theme",
+	"languages": {},
+	"minimap": { "show": "always" },
+	"preferred_line_length": 100,
+	"project_panel": {
+		"dock": "right"
+	},
+	"show_whitespaces": "boundary",
+	"soft_wrap": "bounded",
+	"tab_size": 2,
+	"tabs": {
+		"git_status": true
+	},
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "One Dark"
+	},
+	"ui_font_size": 16,
+	"lsp": {
+		"biome": {
+			"settings": {
+				"require_config_file": true
+			}
+		}
+	}
+}

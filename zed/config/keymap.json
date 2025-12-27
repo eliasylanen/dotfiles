@@ -1,0 +1,36 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+	{
+		"bindings": {
+			"ctrl-q": null
+		}
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-ö": "workspace::ToggleBottomDock",
+			"ctrl-ä": "terminal_panel::ToggleFocus",
+			"ctrl-j": "editor::JoinLines"
+		}
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-alt-down": "editor::DuplicateLineDown",
+			"ctrl-alt-up": "editor::DuplicateLineUp",
+			"ctrl-'": ["editor::ToggleComments", { "advance_downwards": false }]
+		}
+	},
+	{
+		"context": "Terminal",
+		"bindings": {
+			"ctrl-s": null
+		}
+	}
+]

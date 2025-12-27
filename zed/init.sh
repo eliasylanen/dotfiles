@@ -14,6 +14,6 @@ curl -f https://zed.dev/install.sh | sh
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-ln -sf "$SCRIPT_DIR/zed" "$HOME/.config/zed"
+ln -sf "$SCRIPT_DIR/config" "$HOME/.config/zed"
 
 echo "zed configured"
