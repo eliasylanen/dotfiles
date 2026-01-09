@@ -22,13 +22,13 @@ dirs=($(find . -type f -name "init.sh" -printf "%h\n" | sort))
 
 for dir in "${dirs[@]}"; do
   echo "Running $dir/init.sh..."
-  "$dir/init.sh"
+  source "$dir/init.sh"
 done
 
 kernel_info=$(uname -a);
 if [[ "$kernel_info" == *"microsoft"* ]]; then
   echo "Running WSL init script...";
-  ./wsl/init.sh;
+  source ./wsl/wsl.sh;
 fi
 
 echo "Done, please source .bashrc to complete the setup.";

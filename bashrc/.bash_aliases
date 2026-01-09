@@ -1,10 +1,10 @@
 update_system_pkgs() {
     if [ -f /etc/fedora-release ]; then
         echo "Detected Fedora. Updating with dnf..."
-        sudo dnf update -y
+        sudo dnf update -y && sudo dnf autoremove -y
     elif [ -f /etc/debian_version ]; then
         echo "Detected Debian/Ubuntu. Updating with apt..."
-        sudo apt update && sudo apt full-upgrade -y
+        sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
     fi
 }
 
@@ -16,7 +16,7 @@ update_flatpaks() {
     fi
 }
 
-alias update_all="brew update && brew upgrade && update_flatpaks && curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell && update_system_pkgs";
+alias sys_update="brew update && brew upgrade && update_flatpaks && curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell && update_system_pkgs";
 
 alias ll='ls -alFh'
 alias la='ls -A'
