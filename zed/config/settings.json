@@ -1,24 +1,22 @@
 {
-	"agent": {
+	"git_panel": {
+  "tree_view": true
+ },
+ "agent": {
 		"profiles": {
-   "agent": {
-    "name": "Agent",
-    "tools": {},
-    "enable_all_context_servers": false,
-    "context_servers": {}
-   }
+   
   },
   "dock": "left",
 		"default_profile": "write",
 		"default_model": {
 			"provider": "copilot_chat",
-			"model": "gemini-3-pro-preview"
+			"model": "gemini-3-pro-preview",
 		},
 		"model_parameters": [],
 		"inline_assistant_model": {
 			"provider": "copilot_chat",
-			"model": "claude-haiku-4.5"
-		}
+			"model": "gemini-3-pro-preview",
+		},
 	},
 	"auto_install_extensions": {
 		"biome": true,
@@ -38,12 +36,12 @@
 		"sql": true,
 		"svelte": true,
 		"terraform": true,
-		"xml": true
+		"xml": true,
 	},
 	"autosave": "on_window_change",
 	"buffer_font_size": 14,
 	"features": {
-		"edit_prediction_provider": "zed"
+		"edit_prediction_provider": "zed",
 	},
 	"hard_tabs": true,
 	"icon_theme": "Material Icon Theme",
@@ -51,25 +49,25 @@
 	"minimap": { "show": "always" },
 	"preferred_line_length": 100,
 	"project_panel": {
-		"dock": "right"
+		"dock": "right",
 	},
 	"show_whitespaces": "boundary",
 	"soft_wrap": "bounded",
 	"tab_size": 2,
 	"tabs": {
-		"git_status": true
+		"git_status": true,
 	},
 	"theme": {
 		"mode": "system",
 		"light": "One Light",
-		"dark": "One Dark"
+		"dark": "One Dark",
 	},
 	"ui_font_size": 16,
 	"lsp": {
 		"biome": {
 			"settings": {
-				"require_config_file": true
-			}
-		}
-	}
+				"require_config_file": true,
+			},
+		},
+	},
 }
