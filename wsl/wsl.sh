@@ -1,6 +1,11 @@
 #!/bin/bash
 
-curl -sL https://raw.githubusercontent.com/wslutilities/wslu/master/extras/scripts/wslu-install | bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+source "$SCRIPT_DIR/../util/check_command.sh"
+check_command wslpath || curl -sL https://raw.githubusercontent.com/wslutilities/wslu/master/extras/scripts/wslu-install | bash
 
 windowsUserFolder=$(wslpath "$(wslvar USERPROFILE)");
 
@@ -9,8 +14,6 @@ cp "../sources/scoop.json" "$windowsUserFolder/Desktop/";
 cp "../sources/update-startup.lnk" "$windowsUserFolder/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/";
 cp "../sources/WindowsTerminalSettings.json" "$windowsUserFolder/Desktop/";
 cp "../sources/winget.json" "$windowsUserFolder/Desktop/";
-
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 mkdir -p "$HOME/.bashrc.d"
 ln -sf "$SCRIPT_DIR/wsl.bashrc" "$HOME/.bashrc.d/wsl.bashrc"
