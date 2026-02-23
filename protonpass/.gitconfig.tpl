@@ -1,0 +1,1 @@
+{{ pass://Personal/Dotfiles/.gitconfig }}

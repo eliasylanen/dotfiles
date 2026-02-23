@@ -16,7 +16,7 @@ update_flatpaks() {
     fi
 }
 
-alias sys_update="brew update && brew upgrade && update_flatpaks && curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell && update_system_pkgs";
+alias sys_update="brew update && brew upgrade && update_flatpaks && curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell && update_system_pkgs && pass-cli update";
 
 alias ll='ls -alFh'
 alias la='ls -A'
