@@ -8,4 +8,3 @@ source "$SCRIPT_DIR/../util/check_command.sh"
 check_command tldr || { echo >&2 "tldr is not installed. Aborting."; exit 1; }
 
 tldr --update
-tldr --seed-config
