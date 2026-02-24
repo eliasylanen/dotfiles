@@ -7,7 +7,6 @@
 ## dotfiles WIP
 
 * fstab
-* zed config
 
 ## install WIP
 
@@ -15,6 +14,5 @@
 * Docker
 * Heroku CLI
 * Micro
-* Taskfile
 * Terraform
 * UpCloud CLI
