@@ -1,6 +1,11 @@
 {
-	"edit_predictions": {
-  "provider": "zed"
+	"agent_servers": {
+  "claude-acp": {
+   "type": "registry"
+  }
+ },
+ "edit_predictions": {
+  "provider": "copilot"
  },
  "git_panel": {
   "dock": "right",
@@ -59,7 +64,7 @@
 		"git_status": true,
 	},
 	"theme": {
-		"mode": "system",
+		"mode": "dark",
 		"light": "One Light",
 		"dark": "One Dark",
 	},
